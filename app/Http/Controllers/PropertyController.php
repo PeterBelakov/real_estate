@@ -21,6 +21,10 @@ class PropertyController extends Controller {
     //store form data into database ....
     public function create(Request $request) {
 
+
+
+
+
         $data = array();
         $data['price'] = $request->input('price');
         $data['property_type'] = $request->input('property_type');
@@ -54,16 +58,81 @@ class PropertyController extends Controller {
         $data['gsm'] = $request->input('gsm');
         $data['e_mail'] = $request->input('e_mail');
 
+        $validated_data = $this->Validate_form($request, $data);
 
-        Property::save_deal($data);
+        Property::save_deal($validated_data);
     }
 
-    public function store(Request $request) {
-          $this->validate($request, [
-        'price' => 'required|unique:posts|max:2',
-       
-    ]);
-        
+//validation
+    public function Validate_form(Request $request, $data) {
+        $this->validate($request, [
+            'price' => 'required|numeric',
+            'region' => 'required|min:3',
+            'quadrature' => 'required|numeric',
+            'phone' => 'required|min:4|numeric',
+            'date_of_construction' => 'required|min:4|numeric',
+            'gsm' => 'required|min:11|numeric',
+            'property_discription' => 'required|min:15',
+            'e_mail' => 'required|email'
+        ]);
+
+        if (!$data['panella'] == 1) {
+            $data['panella'] = 0;
+        }
+        if (!$data['brick'] == 1) {
+            $data['brick'] = 0;
+        }
+        if (!$data['epk'] == 1) {
+            $data['epk'] = 0;
+        }
+        if (!$data['pk'] == 1) {
+            $data['pk'] = 0;
+        }
+        if (!$data['beams'] == 1) {
+            $data['beams'] = 0;
+        }
+        if (!$data['under_construction'] == 1) {
+            $data['under_construction'] = 0;
+        }
+        if (!$data['with_transition'] == 1) {
+            $data['with_transition'] = 0;
+        }
+        if (!$data['elevator'] == 1) {
+            $data['elevator'] = 0;
+        }
+        if (!$data['central'] == 1) {
+            $data['central'] = 0;
+        }
+        if (!$data['parking'] == 1) {
+            $data['parking'] = 0;
+        }
+        if (!$data['garage'] == 1) {
+            $data['garage'] = 0;
+        }
+        if (!$data['mortgaged'] == 1) {
+            $data['mortgaged'] = 0;
+        }
+        if (!$data['internet'] == 1) {
+            $data['internet'] = 0;
+        }
+        if (!$data['furnished'] == 1) {
+            $data['furnished'] = 0;
+        }
+        if (!$data['cctv'] == 1) {
+            $data['cctv'] = 0;
+        }
+        if (!$data['access_control'] == 1) {
+            $data['access_control'] = 0;
+        }
+        if (!$data['security'] == 1) {
+            $data['security'] = 0;
+        }
+        if (!$data['renovated'] == 1) {
+            $data['renovated'] = 0;
+        }
+
+
+        return $data;
     }
 
     public function update(Request $request, $id) {
