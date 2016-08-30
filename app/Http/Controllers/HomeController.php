@@ -18,6 +18,21 @@ public function login()
      *
      * @return \Illuminate\Http\Response
      */
+     public function offer()
+    {
+        $this->middleware('auth');
+        return view('offer');
+    }
+     public function profile()
+    {
+        $this->middleware('auth');
+        return view('profile');
+    }
+     public function my_adv()
+    {
+        $this->middleware('auth');
+        return view('my-adv');
+    }
     public function search()
     {
         $this->middleware('auth');

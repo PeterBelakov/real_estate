@@ -1,36 +1,5 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <link href="styles/main.css" rel="stylesheet" type="text/css"></link>
-    <script src="script/offer.js"></script>
-    <script src="script/main.js"></script>
-</head>
-
-<body id="offer-page">
-       <!--Header start-->
-        <header class="header">
-            <div class="header-elements wrapper">
-                <div class="header-element logo-container">
-                </div>
-                <div class="header-element">
-                    <a href="search.html">Продажби</a>
-                    </div>
-                <div class="header-element">
-                    <a href="search.html">Под наем</a>
-                    </div>
-                <div class="header-element post-offer">
-                    <a href="new-adv.html" class="btn">Публикувай обява</a>
-                </div>
-                <div class="header-element login-register">
-                    <a href="login.html">Вход</a>
-                    <span>/</span>
-                    <a href="register.html">Регистрация</a>
-                </div>
-            </div>
-        </header>
-<!--Header end-->
+@extends('layouts.app_1')
+@section('content')
 <!--Blue section under the header-->
         <section class="blue-section">
             <div class="blue-section-container wrapper">
@@ -230,19 +199,8 @@
         </main>
         <!--end of page content-->
 
-        <!--Footer starts here-->
-        <footer class="footer">
-            <div class="footer-container wrapper">
-                <div class="footer-center">
-                    <div class="footer-element follow-us">
-                        <span>Follow us:</span>
-                        <div class="social-media-icon facebook-icon"></div>
-                        <div class="social-media-icon twitter-icon"></div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!--footer ends here-->
+     
     </body>
 
 </html>
+@endsection

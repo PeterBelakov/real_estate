@@ -1,51 +1,10 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="styles/main.css"> </link>
-        <script src="./script/main.js"></script>
-    </head>
-    <body>
-              <!--Header start-->
-        <header class="header">
-            <div class="header-elements wrapper">
-                <div class="header-element logo-container">
-                </div>
-                <div class="header-element">
-                    <a href="search.html">Продажби</a>
-                    </div>
-                <div class="header-element">
-                    <a href="search.html">Под наем</a>
-                    </div>
-                <div class="header-element post-offer">
-                    <a href="new-adv.html" class="btn">Публикувай обява</a>
-                </div>
-                <div class="header-element login-register">
-                    <a href="login.html">Вход</a>
-                    <span>/</span>
-                    <a href="register.html">Регистрация</a>
-                </div>
-            </div>
-        </header>
-<!--Header end-->
-<!--Blue section under the header-->
-        <section class="blue-section">
-            <div class="blue-section-container wrapper">
-                <div class="blue-section-element">
-                    <a href="profile.html">Профил</a>
-                </div>
-                <div class="blue-section-element">
-                    <a href="my-adv.html">Моите обяви</a>
-                </div>
-                <div class="blue-section-element">
-                    <a href="new-adv.html">Нова обява</a>
-                </div>
-            </div>
-        </section>
 
-    <!--End of Blue section under header-->
+@extends('layouts.app_1')
 
-          
+@section('content')
+       @include('layouts.under_header') 
+    
+    
         <!--page content-->
         <main class="main-add-adv">
             <div class="content-wrapper wrapper add-adv-content-wrapper">
@@ -269,24 +228,7 @@
             </div>
         </main>
         <!--end of page content-->
-
-
-        <!--Footer starts here-->
-        <footer class="footer">
-            <div class="footer-container wrapper">
-                <div class="footer-center">
-                    <div class="footer-element follow-us">
-                        <span>Follow us:</span>
-                        <div class="social-media-icon facebook-icon"></div>
-                        <div class="social-media-icon twitter-icon"></div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!--footer ends here-->
-
-
-        <!--Google Maps API-->
+         <!--Google Maps API-->
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWEuer5sk-6jm9KQCV_wCcJUrhViN9yKU&callback=initMap"> </script>
         <script>
         function initMap() {
@@ -299,3 +241,5 @@
     </script>
     </body>
 </html>
+
+@endsection
