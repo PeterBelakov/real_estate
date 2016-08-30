@@ -1,0 +1,128 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    background: url("../images/beautiful_house.jpg") no-repeat center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.background {
+    display: inline-block;
+    position: absolute;
+    background-color: white;
+    padding: 2px;
+    top: 20%;
+    right: 10%;
+    width: 360px;
+}
+
+.popUp {
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 20px;
+    box-shadow: 0px 2px 2px 1px lightgray;
+    width: 360px;
+    box-sizing: border-box;
+}
+
+.popUp img {
+    display: block;
+    margin: auto;
+}
+
+.blueGradient {
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left:3px;
+    width: 358px;
+    height: 5px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7470b2+0,04003a+100 */
+    background: #7470b2; /* Old browsers */
+    background: -moz-linear-gradient(left,  #7470b2 0%, #04003a 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #7470b2 0%,#04003a 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #7470b2 0%,#04003a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7470b2', endColorstr='#04003a',GradientType=1 ); /* IE6-9 */
+
+}
+
+.login-form-container input, .login-form-container select {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    height: 25px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 5px;
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    outline: none;
+}
+
+.login-form-container .login-form-btn {
+    background-color: #178fff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+    height: 35px;
+    border-radius: 3px;
+}
+
+.login-form-container .login-form-btn:hover {
+    box-shadow: 0px 0px 15px #178fff;
+}
+
+div.checkbox-container {
+    font-size: 13px;
+    vertical-align: top;
+    margin-top: 10px;
+    position: relative;
+}
+
+input.login-register-checkbox {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 0px;
+    margin-right: 5px;
+    position: relative;
+    top:2px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.label {
+    color: grey;
+}
+
+.link {
+    float: right;
+    color: #178fff;
+}
+
+.login-form-container>div:last-child {
+    font-size: 13px;
+    margin-top: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#client-type-container {
+    margin-top: 10px;
+}
+
+#client-type-select {
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    height: 30px;
+    margin-top: 1px;
+}

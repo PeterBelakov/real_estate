@@ -7,12 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Property extends Model
 {
-   // protected $table = 'property';
-   // protected $primarykey = 'property_id';
-    //public $timestamps = false;
-   // protected $fillable =['proretty_id','property_type', 'location', 'price'];
     
-   // protected
     public static function save_deal($data){
         
         print_r($data);
