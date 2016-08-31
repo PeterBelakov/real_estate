@@ -20,9 +20,10 @@ Route::get('/offer', 'HomeController@offer');
 Route::get('/profile', 'HomeController@profile');
 Route::get('/my-adv', 'HomeController@my_adv');
 Route::get('/search', 'HomeController@search');
+
 Route::get('/adv', 'HomeController@adv');
 Route::get('/login', 'HomeController@login');
-Route::get('/register', 'HomeController@signup');
+Route::get('/register', 'HomeController@register');
 
 Route::get('/home', 'HomeController@index');
 

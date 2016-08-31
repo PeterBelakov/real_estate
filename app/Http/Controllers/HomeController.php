@@ -4,54 +4,73 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests;
 use Illuminate\Http\Request;
+use App\User;
+use Validator;
+use Auth;
+use App\Http\Controllers\Controller;
+use Illuminate\Foundation\Auth\ThrottlesLogins;
+use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
-class HomeController extends Controller
-{
-   
-public function login()
-    {
-        $this->middleware('auth');
-        return view('login');
+class HomeController extends Controller {
+
+    public function __construct() {
+        $this->middleware('auth', ['except' => ['login','register']]);
     }
+
+    public function login() {
+        if (Auth::check())
+        {
+            // The user is logged in...
+            return view('index');
+        }else{
+             return view('login');
+        }
+       
+    }
+
     /**
      * Show the application dashboard.
      *
      * @return \Illuminate\Http\Response
      */
-     public function offer()
-    {
-        $this->middleware('auth');
+    public function offer() {
+
         return view('offer');
     }
-     public function profile()
-    {
-        $this->middleware('auth');
+
+    public function profile() {
+        ;
         return view('profile');
     }
-     public function my_adv()
-    {
-        $this->middleware('auth');
+
+    public function my_adv() {
+
         return view('my-adv');
     }
-    public function search()
-    {
-        $this->middleware('auth');
+
+    public function search() {
+
         return view('search');
     }
-    public function adv()
-            
-    {
-        $this->middleware('auth');
+
+    public function adv() {
+
         return view('new-adv');
     }
-    public function index()
-    {
-        $this->middleware('auth');
-        return view('home');
+
+    public function index() {
+
+        return view('index');
     }
-    
-     public function signup()
-    {
-        return view('register');
+
+    public function register() {
+  if (Auth::check())
+        {
+            // The user is logged in...
+            return view('index');
+        }else{
+             return view('register');
+        }
+       
     }
 }
