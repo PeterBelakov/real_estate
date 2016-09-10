@@ -41,15 +41,15 @@
                                 @endif
                                     <input type="submit" class="login-form-btn" value="Вход">
                                     <div id="remember-forgotten-password" class="checkbox-container">
-                                        <input type="checkbox" class="login-register-checkbox" id="remember-password">
-                                        <label for="remember-password" class="label" id="remember-password-label">Запомни ме</label>
-                                        <a href="#" class="link" id="#forgotten-password">Забравен парола</a>
+                                        <input type="checkbox" name="remember" class="login-register-checkbox" id="remember-password">
+                                        <label for="remember-password" class="label" name="remember" id="remember-password-label">Запомни ме</label>
+                                        <a href="{{ url('/password/reset') }}" class="link" id="#forgotten-password">Забравен парола</a>
                                     </div>
                                     </div>
                                     </form>
                                     <div>
                                         <span class="label">Нямаш профил?</span>
-                                        <a href="#" class="link"> Регистрирай се!</a>
+                                        <a href="/register" class="link"> Регистрирай се!</a>
                                     </div>
                                 </div>
                             </div>

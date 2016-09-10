@@ -14,18 +14,14 @@ class CreatePropertyTable extends Migration
     {
          Schema::create('property', function (Blueprint $table) {
             $table->increments('property_id');
-            $table->string('property_type');
-            $table->string('location');
-            $table->string('price');
-            $table->string('region');
-            $table->string('quadrature');
+            $table->integer('property_type');
+            $table->integer('location');
+            $table->integer('price');
+            $table->integer('region');
+            $table->integer('quadrature');
             $table->integer('floor');
-            $table->string('floors');
-            $table->integer('panella');
-            $table->integer('brick');
-            $table->integer('epk');
-            $table->integer('pk');
-            $table->integer('beams');
+            $table->integer('floors');
+            $table->integer('adv-construction');
             $table->string('date_of_construction');
             $table->integer('under_construction');
             $table->integer('with_transition');
@@ -33,7 +29,6 @@ class CreatePropertyTable extends Migration
             $table->integer('central');
             $table->integer('parking');
             $table->integer('garage');
-            $table->integer('mortgaged');
             $table->integer('internet');
             $table->integer('furnished');
             $table->integer('cctv');
@@ -42,11 +37,11 @@ class CreatePropertyTable extends Migration
             $table->integer('renovated');
             $table->string('property_discription');
             $table->string('photo');
-            $table->string('validity_of_the_notice');
-            $table->integer('phone');
-            $table->integer('gsm');
-            $table->string('e_mail');
+            $table->integer('adv-type');
+            $table->integer('operating_business');
             $table->string('video');
+            $table->string('e_mail');
+            $table->string('gsm');
             $table->string('coordinates_x');
             $table->string('coordinates_y');
         });

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+    @extends('layouts.app')
 
 @section('content')
 @if (count($errors) > 0)
@@ -92,17 +92,21 @@
                                                     <td width="540" valign="top">
                                                         <table width="540" cellspacing="0" cellpadding="0" border="0">
                                                             <tbody><tr>
-                                                                    <td valign="top" width="25%"><input type="checkbox" value="1" name="under_construction">В строеж<br>
+                                                                    <td valign="top" width="25%">
+                                                                        <input type="checkbox" value="1" name="under_construction">В строеж<br>
                                                                         <input type="checkbox" value="1" name="with_transition">С преход<br>
                                                                         <input type="checkbox" value="1" name="elevator">Асансьор<br>
                                                                         <input type="checkbox" value="1" name="central">ТЕЦ<br>
-                                                                    </td><td valign="top" width="25%"><input type="checkbox" value="1" name="parking">С паркинг<br>
+                                                                    </td><td valign="top" width="25%">
+                                                                        <input type="checkbox" value="1" name="parking">С паркинг<br>
                                                                         <input type="checkbox" value="1" name="garage">С гараж<br>
                                                                         <input type="checkbox" value="1" name="mortgaged">Ипотекиран<br>
-                                                                    </td><td valign="top" width="25%"><input type="checkbox" value="1" name="internet">Интернет връзка<br>
+                                                                    </td><td valign="top" width="25%">
+                                                                        <input type="checkbox" value="1" name="internet">Интернет връзка<br>
                                                                         <input type="checkbox" value="1" name="furnished">Обзаведен<br>
                                                                         <input type="checkbox" value="1" name="cctv">Видео наблюдение<br>
-                                                                    </td><td valign="top" width="25%"><input type="checkbox" value="1" name="access_control">Контрол на достъп<br>
+                                                                    </td><td valign="top" width="25%">
+                                                                        <input type="checkbox" value="1" name="access_control">Контрол на достъп<br>
                                                                         <input type="checkbox" value="1" name="security">Охрана<br>
                                                                         <input type="checkbox" value="1" name="renovated">Саниран<br>
                                                                     </td>

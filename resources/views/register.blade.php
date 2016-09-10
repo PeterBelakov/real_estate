@@ -41,23 +41,20 @@
                             <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="Имейл">                   
                             <input type="password" class="login-form-text" name="password" placeholder="Парола">
                             <input type="password" class="login-form-text" name="password_confirmation" placeholder="Повтори паролата">
-                            <div class="checkbox-container">
-                                <input type="checkbox" class="login-register-checkbox" id="if-proffesional">
-                                <label for="if-proffesional" class="label" id="if-proffesional">Аз съм наемодател или професионален брокер</label>
-                            </div>
+                            
                             <div id="client-type-container">
                                 <label for="" class="label">Допълнителна информация:</label>
-                                <select name="" id="client-type-select">    
-                                    <option value="ind" class="client-type-option"> Частно лице</option>
-                                    <option value="corp" class="client-type-option">Компания</option>
-                                    <option value="oth" class="client-type-option">Друго</option>
+                                <select name="more_information" id="client-type-select">    
+                                    <option value="1" name="more_information" class="client-type-option"> Частно лице</option>
+                                    <option value="2" name="more_information" class="client-type-option">Компания</option>
+                                    <option value="3" name="more_information" class="client-type-option">Друго</option>
                                 </select>
                             </div>
                             <input type="submit" class="login-form-btn" value="Вход">
-                            <div id="remember-forgotten-password" class="checkbox-container">
+<!--                            <div id="remember-forgotten-password" class="checkbox-container">
                                 <input type="checkbox" class="login-register-checkbox" id="remember-password">
-                                <label for="remember-password" class="label" id="remember-password-label">Запомни ме</label>
-                            </div>
+                            <label for="remember-password" class="label" id="remember-password-label">Запомни ме</label>
+                            </div>-->
 
                         </form>
                     </div>
