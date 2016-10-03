@@ -20,22 +20,26 @@
                             <div class="header-element logo-container">
                             </div>
                             <div class="header-element">
-                                <a href="{{ url('/search') }}">Продажби</a>
+                                <a href="{{ url('/index') }}" id="header-sales-btn" class="header-main-btn">Начало</a>
                             </div>
                             <div class="header-element">
-                                <a href="{{ url('/search') }}">Под наем</a>
+                                <a href="{{ url('/search') }}" id="header-sales-btn" class="header-main-btn">Продажби</a>
                             </div>
-                            <div class="header-element post-offer">
-                                <a href="{{ url('/adv') }}" class="btn">Публикувай обява</a>
+                            <div class="header-element">
+                                <a href="{{ url('/search') }}" id="header-rent-btn" class="header-main-btn">Под наем</a>
+                            </div>
+                            <div class="header-element btns-container" id="post-offer">
+                                <a href="{{ url('/adv') }}" class="main-btn header-btn">Публикувай обява</a>
                             </div>
                             <!-- Authentication Links -->
                             @if (Auth::guest())
-                            <div class="header-element login-register">
+                            <div class="header-element " id="login-register">
                                 <a href="{{ url('/login') }}">Вход</a>
                                 <span>/</span>
                                 <a href="{{ url('/register') }}">Регистрация</a>
                             </div>
                             @else
+                            
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->name }} <span class="caret"></span>
@@ -53,16 +57,22 @@
 
                     <!--Footer starts here-->
                     <footer class="footer">
-                        <div class="footer-container wrapper">
-                            <div class="footer-center">
-                                <div class="footer-element follow-us">
-                                    <span>Follow us:</span>
-                                    <div class="social-media-icon facebook-icon"></div>
-                                    <div class="social-media-icon twitter-icon"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </footer>
+            <div class="footer-container wrapper">
+                <div class="footer-center">
+                    <div class="footer-element copy-rights">
+                        <span>Контакти</span>
+                    </div>
+                    <div class="footer-element follow-us">
+                        <span>Follow us:</span>
+                        <div class="social-media-icon facebook-icon"></div>
+                        <div class="social-media-icon twitter-icon"></div>
+                    </div>
+                    <div class="footer-element terms-of-use">
+                        <span>Условия за ползване</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
                     <!--footer ends here-->
 
                 </body>

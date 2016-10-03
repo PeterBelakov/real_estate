@@ -35,19 +35,54 @@
                     <li class="post-adv-step"></li>
                 </ul>
             </div>
-
-            <section id="galery">
-                <video src="" class="video-element"></video>
-                <div class="img-element"></div>
-                <div class="img-element"></div>
-                <div class="img-element"></div>
-                <div class="img-element"></div>
-                <div class="img-element"></div>
-                <div class="img-element"></div>
-                <div class="img-element"></div>
-                <div class="img-element"></div>
-                <div class="img-element"></div>
-                <div class="img-element"></div>
+            <div id="galery-button-container">
+                <div id="galery-btn-right"></div>
+                <div id="galery-btn-left"></div>
+            </div>
+            <section id="galery-container">
+                <section id="galery">
+                    <video src="" class="video-element"></video>
+                    <!--<div class="img-element"></div>
+                    <div class="img-element"></div>
+                    <div class="img-element"></div>
+                    <div class="img-element"></div>
+                    <div class="img-element"></div>
+                    <div class="img-element"></div>
+                    <div class="img-element"></div>
+                    <div class="img-element"></div>
+                    <div class="img-element"></div>
+                    <div class="img-element"></div>
+                    <div class="img-element"></div>
+                    <div class="img-element"></div>
+                    <div class="img-element"></div>
+                    <div class="img-element"></div>
+                    <div class="img-element"></div>
+                    <div class="img-element"></div>
+                    <div class="img-element"></div>
+                    <div class="img-element"></div>
+                    <div class="img-element"></div>
+                    <div class="img-element"></div>-->
+                    <img src="" alt="" class="img-element">
+                    <img src="" alt="" class="img-element">
+                    <img src="" alt="" class="img-element">
+                    <img src="" alt="" class="img-element">
+                    <img src="" alt="" class="img-element">
+                    <img src="" alt="" class="img-element">
+                    <img src="" alt="" class="img-element">
+                    <img src="" alt="" class="img-element">
+                    <img src="" alt="" class="img-element">
+                    <img src="" alt="" class="img-element">
+                    <img src="" alt="" class="img-element">
+                    <img src="" alt="" class="img-element">
+                    <img src="" alt="" class="img-element">
+                    <img src="" alt="" class="img-element">
+                    <img src="" alt="" class="img-element">
+                    <img src="" alt="" class="img-element">
+                    <img src="" alt="" class="img-element">
+                    <img src="" alt="" class="img-element">
+                    <img src="" alt="" class="img-element">
+                    <img src="" alt="" class="img-element">
+                </section>
             </section>
 
             <div class="content-wrapper wrapper">
@@ -141,7 +176,7 @@
                                     <input type="text" class="contact-agent-form-text" placeholder="Телефон">
                                     <input type="text" class="contact-agent-form-text" placeholder="E-mail">
                                     <textarea class="contact-agent-form-textarea">I am interested in 29 W 15th Street # FL 4, Manhattan, NY 10011</textarea>
-                                    <input type="button" class="form-btn" value="Contact agent">
+                                    <input type="button" class="contact-agent-btn main-btn" value="Contact agent">
                                 </form>
                             </div>
                         </div>

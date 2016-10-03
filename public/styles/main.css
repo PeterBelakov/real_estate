@@ -32,7 +32,7 @@ a:hover {
     margin-bottom: 50px;
 }
 
-.btn {
+/*.btn {
     display: inline-block;
     margin: auto;
     color: black;
@@ -47,22 +47,27 @@ a:hover {
 .btn:hover {
     box-shadow: 0px 0px 15px deepskyblue;
     color: black;
-}
+}*/
 
-.form-button {
-    display: inline-block;
-    color: deepskyblue;
-    background-color: white;
-    width: 175px;
-    height: 30px;
-    border: 1px solid deepskyblue;
-    border-radius: 5px;
+.main-btn    {
+    background-color: #178fff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+    border-radius: 3px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: box-shadow 0.3s;
     text-align: center;
-    line-height: 30px;
 }
 
-.form-button:hover {
-    box-shadow: 0px 0px 15px deepskyblue;
+.main-btn:hover {
+    box-shadow: 0px 0px 15px #178fff;
+    color: white;
+    cursor: pointer;
 }
 
 /*header style____________________________________________________________________*/
@@ -84,7 +89,7 @@ a:hover {
     margin-left: 20px;
     /*height: 100%;*/
     position: relative;
-    margin-top: 16px;
+    margin-top: 17px;
     vertical-align: top;
 }
 
@@ -93,15 +98,40 @@ a:hover {
     height: 100%;
     background: url("../images/logo.jpg") center no-repeat;
     margin-top: 0px;
+    background-size: 100% auto;
+    cursor: pointer;
 }
 
-.post-offer {
-    float: right;
-    margin-top: 14px;
-}
+/*.header-main-btn {
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    box-shadow: inset 0px 0px 5px 5px white;
+}*/
 
-.login-register {
+/*.header-main-btn:hover {
+    background-color: #178fff;
+    color: black;
+}*/
+
+#login-register {
     float: right
+}
+
+#post-offer {
+    float: right;
+    margin-top: 15px;
+}
+
+.header-btn {
+    font-size: 14px;
+    background-color: white;
+    color: black;
+    border: 1px solid #178fff;
+}
+
+.header-btn:hover {
+    color: black;
 }
 
 /*header style end_________________________________________________________________*/
@@ -112,8 +142,20 @@ a:hover {
     background: url("../images/home-cover.jpg") center no-repeat;
     background-size: 100% auto;
     width: 100%;
-    height: 350px;
+    height: 475px;
     min-width: 1000px;
+}
+
+#big-picture h1#big-picture-title {
+    margin: auto;
+    width: 1000px;
+    font-size: 4em;
+    font-weight: normal;
+    background-color: rgba(0,0,0,0.2);
+    color: white;;
+    position: relative;
+    top: 10%;
+    padding: 10px;
 }
 
 .big-picture-wrapper {
@@ -192,14 +234,15 @@ a:hover {
 
 .main-home .content-wrapper {
     min-width: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .small-pictures-container {
     height: 275px;
     width: 850px;
     margin: auto;
+    margin-top: 50px;
     font-size: 0px;
 }
 
@@ -209,8 +252,9 @@ a:hover {
     display: inline-block;
     font-size: 0px;
     position: relative;
+    box-sizing: border-box;
+    vertical-align: top;
 }
-
 .small-pictures-container-element:first-child {
     background: url("../images/mission.jpg") center no-repeat;
     margin-right: 50px;
@@ -218,6 +262,27 @@ a:hover {
 
 .small-pictures-container-element:last-child {
     background: url("../images/advice.jpg") center no-repeat;
+}
+
+.small-pictures-container:nth-child(2) .small-pictures-container-element:first-child {
+    background: white;
+    border: 1px solid lightgrey;
+    color: black;
+    font-size: 16px;
+    padding: 15px;
+}
+
+.small-pictures-container:nth-child(2) .small-pictures-container-element:last-child {
+    background: white;
+    border: 1px solid lightgrey;
+    color: black;
+    font-size: 16px;
+    padding: 15px;
+}
+
+.small-pictures-container-element.center-positioned {
+    margin: auto;
+    display: block;
 }
 
 .small-pictures-container-element a {
@@ -365,7 +430,14 @@ a:hover {
     color: white;
 }
 
-
+#start-drawing {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: red;
+    border-radius: 3px;
+}
 
 /*End of search page styles_____________________________________________________________*/
 
@@ -535,8 +607,54 @@ a:hover {
 
 .adv-button {
     width: 125px;
-    margin-left: 16px;
+    margin-left: 5px;
+    font-size: 14px;
 }
+
+.adv-button:first-child {
+    margin-left: 40px;
+}
+
+.comment-container {
+    display: block;
+    padding:25px;
+    padding-left: 40px;
+    padding-bottom: 0px;
+    overflow: hidden;
+    max-height: 0px;
+    -webkit-transition: max-height 2s; /* For Safari 3.1 to 6.0 */
+    transition: max-height 2s;
+}
+
+.comment-text{
+    width: 350px;
+    height: 200px;
+    resize: vertical;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+ }
+ .comment-send-btn {
+     margin-left: 20px;
+     position: relative;
+     top: 95px;
+ }
+/*#cover-cloak {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+#send-comment-container {
+
+}*/
+
+
 
 /*End of my advertisements page styles___________________________________________________*/
 
@@ -587,32 +705,56 @@ a:hover {
     margin: auto;
     border: 1px solid deepskyblue;
     border-top: 3px solid deepskyblue;
+    padding: 20px;
 }
 
 #map {
+    display: inline-block;
+    float: right;
     width: 600px;
-    height: 350px;
-    margin: auto;
-    margin-top: 20px;
+    height: 370px;
 }
 
 .post-adv-form-container {
-    margin: auto;
-    width: 600px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    display: inline-block;
     color: deepskyblue;
+    width: 960px;
 }
 
 .post-form-line {
     width: 300px;
-    margin:auto;
     margin-top: 10px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+}
+
+.post-form-line:first-child {
+    margin-top: 0px;
 }
 
 .post-form-element {
     width: 100%;
     margin-top: 5px;
+}
+
+#adv-specs {
+    float: left;
+}
+#adv-description-container {
+    float: left;
+}
+
+#new-adv-post-btn-container {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    width: 800px;
+    border-top: 1px solid lightgray;
+}
+
+#new-adv-post-btn-container input {
+    margin-top: 20px;
 }
 
 .form-element-label {
@@ -624,6 +766,12 @@ a:hover {
     float: left;
     font-weight: bold;
     margin-right: 10px;
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+.adv-type input {
+    height: 20px;
 }
 
 .property-price-element {
@@ -640,14 +788,14 @@ a:hover {
     margin-right: 15px;
 }
 
-#price-btn {
+/*#price-btn {
     display: inline-block;
     width: 20px;
     height: 20px;
     background: url("../images/x.jpg") center no-repeat;
     position: relative;
     top: 5px;
-}
+}*/
 
 .property-main-features-element {
     display: inline-block;
@@ -696,6 +844,7 @@ a:hover {
 }
 
 .adv-feature-type-column span {
+    cursor: pointer;
 }
 
 div.attach-form-container {
@@ -713,11 +862,11 @@ div.attach-form-container:last-child {
 div.attach-form-container .attach-btn {
     position: relative;
     top: 10px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .adv-description {
-    resize: vertical;
+    resize: none;
     width: 300px;
     box-sizing: border-box;
     margin-top: 5px;
@@ -729,11 +878,6 @@ div.attach-form-container .attach-btn {
     margin: auto;
     margin-top: 30px;
     width: 100px;
-    color: white;
-    background-color: #7898fd;
-    border:none;
-    font-size: 18px;
-    font-weight: bold;
     line-height: initial;
 }
 
@@ -743,6 +887,7 @@ div.attach-form-container .attach-btn {
 
 #offer-page main {
     font-size: 0px;
+    position: relative;
 }
 
 #offer-page .content-wrapper {
@@ -764,12 +909,56 @@ ul#page-indicator {
     padding: 0px;
 }
 
+#galery-btn-container {
+    position: relative;
+    min-width: 1000px;
+}
+
+#galery-btn-right {
+    display: inline-block;
+    position: absolute;
+    height: 50px;
+    width: 30px;
+    right: 30px;
+    top: 213px;
+    box-sizing: border-box;
+    border: 0.5px solid white;
+    background:url("../images/arrow-right.png") center no-repeat;
+    background-color: rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#galery-btn-left {
+    display: inline-block;
+    position: absolute;
+    height: 50px;
+    width: 30px;
+    left: 30px;
+    top: 213px;
+    box-sizing: border-box;
+    border: 0.5px solid white;
+    background:url("../images/arrow-left.png") center no-repeat;
+    background-color: rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#galery-container {
+    position: relative;
+    min-width: 1000px;
+    height: 350px;
+}
+
 #galery {
     margin-bottom: 20px;
     font-size: 0px;
     height: 350px;
-    width:1750px;
+    /*width: 3000px;*/
     overflow: hidden;
+    position: absolute;
+    left:0px;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    transition: left 2s;
 }
 
 .video-element {
@@ -788,7 +977,9 @@ ul#page-indicator {
     box-sizing: border-box;
     vertical-align: top;
     display: inline-block;
-    border: 1px solid lightgray;
+    /*border: 0.5px solid lightgray;*/
+    border-color: lightgray;
+    border-collapse: collapse;
 }
 
 .info-title {
@@ -1061,22 +1252,13 @@ ul#page-indicator {
     resize: vertical;
 }
 
-.form-btn {
-    background-color: #178fff;
-    border: none;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    outline: none;
+.contact-agent-btn {
     height: 35px;
-    border-radius: 3px;
 }
 
 .form-btn:hover {
     box-shadow: 0px 0px 15px #178fff;
 }
-
-
 
 /*End of offer page styles________________________________________________________________*/
 
@@ -1097,19 +1279,24 @@ ul#page-indicator {
 .footer-center {
     margin:auto;
     height: 100%;
-    width: 151px;
+    width: 500px;
 }
 
 .footer-element {
     display: inline-block;
-    height: 100%;
-    margin-top: 16px;
+    /*height: 100%;*/
+    margin-top: 18px;
+    vertical-align: top;
+    margin-left: 50px;
 }
 
 .follow-us {
-    display: block;
-    margin: auto;
     position: relative;
+    margin-top: 0px;
+}
+
+.copy-rights {
+    
 }
 
 .social-media-icon {

@@ -40,10 +40,18 @@
                         </div>
                     </div>
                     <div class="content-element adv-functions">
-                        <a href="#" class="form-button adv-button">Редактирай</a>
-                        <a href="offer.html" class="form-button adv-button">Преглед</a>
-                        <a href="#" class="form-button adv-button">Изтриване</a>
-                        <a href="#" class="form-button adv-button">Деактивиране</a>
+                        <a href="#" class="form-button adv-button main-btn">Редактирай</a>
+                        <a href="offer.html" class="form-button adv-button main-btn">Преглед</a>
+                        <a href="#" class="form-button adv-button main-btn">Изтриване</a>
+                        <a href="#" class="form-button adv-button main-btn">Деактивиране</a>
+                        <a href="#" class="form-button adv-button main-btn comment-btn" data="1">Коментар</a>
+                        <div class="comment-container">
+                            <form action="">
+                                <textarea name="" id="" cols="30" rows="10" class="comment-text"></textarea>
+                                <input type="button"," value="Изпрати" class="comment-send-btn main-btn">
+                                <input type="hidden"," value="1" class="offer-id">
+                            </form>
+                        </div>
                     </div>
                 </div>
                 <div class="advertisement">
@@ -80,10 +88,18 @@
                         </div>
                     </div>
                     <div class="content-element adv-functions">
-                        <a href="#" class="form-button adv-button">Редактирай</a>
-                        <a href="offer.html" class="form-button adv-button">Преглед</a>
-                        <a href="#" class="form-button adv-button">Изтриване</a>
-                        <a href="#" class="form-button adv-button">Деактивиране</a>
+                        <a href="#" class="form-button adv-button main-btn">Редактирай</a>
+                        <a href="offer.html" class="form-button adv-button main-btn">Преглед</a>
+                        <a href="#" class="form-button adv-button main-btn">Изтриване</a>
+                        <a href="#" class="form-button adv-button main-btn">Деактивиране</a>
+                        <a href="#" class="form-button adv-button main-btn comment-btn" offer-id="2">Коментар</a>
+                        <div class="comment-container">
+                            <form action="">
+                                <textarea name="" id="" cols="30" rows="10" class="comment-text"></textarea>
+                                <input type="button"," value="Изпрати" class="comment-send-btn main-btn">
+                                <input type="hidden"," value="1" class="offer-id">
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

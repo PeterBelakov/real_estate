@@ -26,7 +26,8 @@
                         <input class="agencyName profileInput" type="text" placeholder="Име на агенцията*"/>
                         <input class="name profileInput" type="text" placeholder="Име"/>
                         <input class="email profileInput" type="text" placeholder="Е-майл"/>
-                        <input class="profileButton profileInput form-button" id="profileInputButton" type="button" value="Редактирай"/>
+                        <input class="main-btn" id="profileInputButton" type="button" value="Редактирай"/>
+                        
                     </form>
                 </div>
             </div>

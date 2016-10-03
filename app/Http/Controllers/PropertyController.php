@@ -51,7 +51,7 @@ class PropertyController extends Controller {
         $data['property_discription'] = $request->input('property_discription');
         $data['adv-type'] = (int) $request->input('adv-type');
         //$data['photo'] = $request->input('photo');
-        $data['video'] = $request->input('video');
+        //$data['video'] = $request->input('video');
         $data['operating_business'] = (int) $request->input('operating_business');
 //        $file = array('photo' => Input::file('photo'));
 //        $file = Input::file('photo');
@@ -152,11 +152,11 @@ class PropertyController extends Controller {
             $data['renovated'] = 0;
         }
 
-        if (!empty($data['video'])) {
-            //do upload 
-        } else {
-            $data['video'] = 0;
-        }
+//        if (!empty($data['video'])) {
+//            //do upload 
+//        } else {
+//            $data['video'] = 0;
+//        }
 //        if(!empty($data['photo'])){
 //        //do upload 
 //    }else{

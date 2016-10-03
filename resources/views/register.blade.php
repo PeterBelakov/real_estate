@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="styles/main.css"> </link>
-        <link rel="stylesheet" type="text/css" href="styles/login.css"> </link>
-    </head>
-
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles/main.css"> </link>
+    <link rel="stylesheet" type="text/css" href="styles/login.css"> </link>
+    <script src="script/main.js"></script>
+</head>
     <body>
+        
         <main class="wrapper">
             <div class="background">
                 <div class="blueGradient">

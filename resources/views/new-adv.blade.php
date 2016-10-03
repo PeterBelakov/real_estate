@@ -209,7 +209,9 @@
                             <div class="post-form-line ">
                                 <div class="adv-feature-type-column attach-form-container">
                                     <label for="video-path" class="form-element-label">Видео:</label>
-                                   <input type="file"," name="video" id="video-path" class="post-form-element post-form-input-text">
+                                  <!--{!! Form::file('video', array('class' => 'video')) !!}-->
+                                  <input name="video" class="post-form-element post-form-input-text" type ="file" accept="video/*">
+                                   <!--<input type="file"," name="video" id="video-path" class="post-form-element post-form-input-text">-->
                                 </div>
                                 <div class="adv-feature-type-column attach-form-container">
                                     <input type="button" class="post-form-element post-form-button form-button attach-btn" value="Прикачи">
